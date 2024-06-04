@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, VStack, Text, Button, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Checkbox, Image, IconButton, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, CircularProgress, useDisclosure, Box } from "@chakra-ui/react";
 import { FaSearch, FaBook, FaVideo, FaPlus, FaExternalLinkAlt } from "react-icons/fa";
+import Navigation from "../components/Navigation.jsx";
 
 const sampleData = {
   answer: {
@@ -62,6 +63,7 @@ const Index = () => {
 
   return (
     <Container maxW="container.lg" py={10}>
+      <Navigation />
       <VStack spacing={8} align="stretch">
         <Text fontSize="2xl" fontWeight="bold">
           Answer
